@@ -3,7 +3,7 @@ import Navbarbelt from './NavbarBelt/navbarbelt'
 
 function Navbar() {
   return (
-    <div className='w-full border border-black '>
+    <div className='w-full sticky top-0 z-40'>
         <Navbarbelt/>
         <Navbarbanner/>
     </div>

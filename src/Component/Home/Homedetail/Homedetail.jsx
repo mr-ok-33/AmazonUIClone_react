@@ -2,7 +2,7 @@ import React from 'react';
 const Homedetail = () => {
  
   return (
-    <div className="w-full  px-8 h-full relative top-[600px] mb-[670px]">
+    <div className="w-full px-8 ">
       <div className=" p-4 w-full">
         <div className="text-bold pb-4 pl-3 text-[29px] ">Today's Special</div>
         <div className=" border rounded-sm p-4 flex flex-row gap-2 overflow-x-auto scrollbar-hide  w-full">
