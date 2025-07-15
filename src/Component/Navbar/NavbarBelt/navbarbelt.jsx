@@ -6,12 +6,11 @@ import flag from '../../../assets/indiaflag.png';
 import { Form, Link } from 'react-router';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import {useSelector, useDispatch} from 'react-redux';
-import { useState } from 'react';
+// import { useState } from 'react';
 import { Login } from '../../Login/Login';
 
 const Navbarbelt = () => {
     const cartItems = useSelector((state)=> state.cart.items);
-    const [input,setInput] = useState('');
 
     return (
         <div className='flex justify-between flex-wrap lg:flex-nowrap bg-black w-[100%] min-h-[90px] whitespace-nowrap z-40 sticky top-0'>
@@ -33,7 +32,7 @@ const Navbarbelt = () => {
                     <div className="text-[15px]">All</div>
                     <ArrowDropDownOutlinedIcon sx={{ fontSize: "28px" }} />
                 </div>
-                <input value={input} onChange={(e)=>console.log(e.target.value)} type="text" className='bg-white outline-none border-none p-2 w-[100%] text-xl' placeholder='Search Amazon.in' />
+                <input type="text" className='bg-white outline-none border-none p-2 w-[100%] text-xl' placeholder='Search Amazon.in' />
                 <div className="bg-orange-300 flex py-2 px-2 border rounded-sm w-11">
                     <SearchOutlinedIcon sx={{ fontSize: "32px" }} />
                 </div>
